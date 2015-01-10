@@ -1,0 +1,26 @@
+print ("Esto es CAMBIA PALABRAS. Introduce cualquier palabra para verla traducida!") #Inicio
+original = raw_input('Escribe una palabra:')
+
+if len(original) > 0 and original.isalpha():
+	print ("Tu palabra es " + original)
+else:
+	print 'No has escrito nada!!'
+palabra = original.lower()
+primera = palabra [0]
+pyg = 'ay'
+nueva_palabra = palabra + primera + pyg
+nueva_palabra[1:len(nueva_palabra)]
+print "Tu nueva palabra es: " + nueva_palabra[1:len(nueva_palabra)]
+
+def clinic():
+    answer = raw_input("Te gusto?")
+    if answer == "SI" or answer == "Si" or answer == "si":
+        print "Me alegra leer eso! Nos vemos pronto."
+    elif answer == "NO" or answer == "No" or answer == "no":
+        print "Trabajare en que te guste, amigo!"
+    else:
+        print "Pero que dices?"
+        clinic()
+
+clinic()
+raw_input()
