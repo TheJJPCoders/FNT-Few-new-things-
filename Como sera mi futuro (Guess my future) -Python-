@@ -1,0 +1,20 @@
+print ("Escriba un Numero del 1 al 10 y le dire que tan bueno sera su futuro!")
+print ("(Si recibe un 1 sera bueno, si recibe un 0 malo y un -1 es el peor)")
+molex_1 = input ("Cual es su numero?")
+def mayor_menor_igual_5(molex_1):
+    if molex_1 > 5:
+        return 1
+    elif molex_1 < 5:          
+        return -1
+    else:
+        return 0
+    
+print mayor_menor_igual_5("%s" % (molex_1))
+if molex_1 > 5:
+    print ("Felicidades!! Tu futuro es prometedor")
+elif molex_1 < 5:          
+    print ("Tu futuro es incierto")
+else:
+    print ("Tu futuro esta perdido")
+raw_input ("Desea salir?")
+
